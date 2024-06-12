@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oracal restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+  <header class="header" id="navigation-menu">
+    <div class="content">
+      <nav>
+        </br>
+        <ul class="nav-menu">
+          <li> <a href="index.html"><b><ins>Home</ins></b></a></li>
+		  <li> <a href="Login.php" class="nav-link"><b><ins>Register</ins></b></a></li>
+		  <li> <a href="book.php" class="nav-link"><b><ins>Book Now</ins></b></a></li>
+		  <li> <a href="Restaurant.html"><b><ins>Restaurant</ins></b></a></li>
+		  <li> <a href="Room.html"><b><ins>Rooms</ins></b></a></li>
+		  <li> <a href="about.html"><b><ins>About</ins></b></a></li>
+		  <li> <a href="#contact" class="nav-link"><b><ins>Contact</ins></b></a></li>
+        </ul>
+
+        <div class="hambuger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+ <img src="Images/36.jpg" width="150px">
+      
+  <section class="home" id="home">
+    <div class="head_content">
+      <div class="box">
+        <div class="text">
+          <h1><i><b><ins>Oracal Restaurant</ins></b></i></h1>
+          <p><b>Discover real island life, cultural immersion, city nightlife, a tropical Christmas & New Year’s Eve and more when you stay at any (or many) of our 11 hotels & resorts across Sri Lanka for 30 day</b></p>
+          <button>MORE INFO</button>
+		  </br>
+		  </br>
+		     <i style='font-size:44px' class='fas'>&#xf27a;</i>
+        </div>
+      <div class="image">
+        <img src="Images/8.jpg" class="slide">
+      </div>
+      <div class="image_item">
+        <img src="Images/8.jpg" alt="" class="slide active" onclick="img('Images/8.jpg')">
+        <img src="Images/27.jpg" alt="" class="slide" onclick="img('Images/27.jpg')">
+        <img src="Images/6.jpg" alt="" class="slide" onclick="img('Images/6.jpg')">
+        <img src="Images/26.jpg" alt="" class="slide" onclick="img('Images/26.jpg')">
+		<img src="Images/3.jpg" alt="" class="slide" onclick="img('Images/3.jpg')">
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.image');
+      line.style.background = change;
+    }
+  </script>
+  
+
+  <br>
+  <br>
+  <br>
+  <section class="about top" id="about">
+    <div class="content flex">
+      <div class="left">
+        <div class="img">
+          <img src="Images/2.jpg" alt="" class="image1">
+          <img src="Images/4.jpg" alt="" class="image2">
+        </div>
+      </div>
+      <div class="right">
+        <div class="heading">
+          <h5><b>RAISING COMFOMRT TO THE HIGHEST LEVEL</b></h5>
+          <h2><b>Welcome to Oracal Restaurant Resort</b></h2>
+          <p><b>Make the most of your travels in Sri Lanka with a stay at <ins> Oracal Restaurant</ins>,for a relaxing time in Hikkaduwa. Whether you starting your trip, ending it,
+             or just passing through, we will be sure to take care of your ever need. Located just 1 hour from Katunayake Airport, and 45 minutes from Colombo, the hotel offers convenient and comfortable accommodation.</b></p>
+          <p><b>The colonial style hotel balances privacy and a welcoming atmosphere, with combinations of terracotta, iron and teak wood creating inviting spaces. Our accommodation includes Deluxe Rooms, 
+            Suites and two Family Apartments, offering flexible choices to our guests. All our accommodation includes air conditioning, a private terrace or balcony (or both), and one or two private bathrooms. 
+            Just a 5-minute walk from the beach, the hotel is quietly situated but still close to local restaurants and other hotels</b></p>
+       <hr /> </div>
+      </div>
+    </div>
+  </section>
+  <section class="map top">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1514.8210319156856!2d80.0992013352701!3d6.135211463753123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1643970528143!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+
+  <footer>
+    <div class="container grid top">
+      <div class="box">
+        <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/48/000000/external-hotel-hotel-services-and-city-elements-flatart-icons-flat-flatarticons-1.png" />
+        <br>
+        <br>
+        <p><acronym title>Accepted payment methods</acronym></p>
+        <br>
+        <div class="payment grid">
+          <img src="https://img.icons8.com/color/48/000000/visa.png" />
+          <img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+          <img src="https://img.icons8.com/color-glass/48/000000/paypal.png" />
+          <img src="https://img.icons8.com/fluency/48/000000/amex.png" />
+        </div>
+      </div>
+
+     
+<address>
+      <div class="box">
+        <h3>Contact Us</h3>
+
+        <ul>
+		<section class="contact" id="#contact">
+          <li>No 222/1, Galle Road, Hikkaduwa</li>
+		  <a href="https:www.oracalresuternt@gmail.com/">Oracalerestaurent@gmail.com</a>
+          </br>
+		  </br>
+		  <li><i class="far fa-phone-alt"></i>+94912277245 </li>
+          <li><i class="far fa-phone-alt"></i>+94912277247 </li>
+        </ul>
+      </div>
+	 </address>
+    <selection class="book">
+	  <div class="container">
+        <div class="row mb-4">
+         <div class="col-md-3 mb-5">
+            <p>Sign up for our newsletter</p>
+            <form action="#" class="footer-newsletter">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email...">
+                <button type="submit" class="btn"><span class="fa fa-paper-plane"></span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row pt-5">
+          
+          <p class="col-md-6 text-right social">
+            <a href="#"><span class="fa fa-tripadvisor"></span></a>
+            <a href="#"><span class="fa fa-facebook"></span></a>
+            <a href="#"><span class="fa fa-twitter"></span></a>
+            <a href="#"><span class="fa fa-linkedin"></span></a>
+            <a href="#"><span class="fa fa-vimeo"></span></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+	 </selection>
+  </footer>
+</body>
+</html>

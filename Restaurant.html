@@ -1,0 +1,185 @@
+<html>
+<head>
+ <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oracal restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<header class="header" id="navigation-menu">
+    <div class="content">
+      <nav>
+        <br>
+          <ul class="nav-menu">
+          <li> <a href="index.html"><b><ins>Home</ins></b></a></li>
+		  <li> <a href="Login.php" class="nav-link"><b><ins>Register</ins></b></a></li>
+		  <li> <a href="book.php" class="nav-link"><b><ins>Book Now</ins></b></a></li>
+		  <li> <a href="Restaurant.html"><b><ins>Restaurant</ins></b></a></li>
+		  <li> <a href="Room.html"><b><ins>Rooms</ins></b></a></li>
+		  <li> <a href="about.html"><b><ins>About</ins></b></a></li>
+		  <li> <a href="#contact" class="nav-link"><b><ins>Contact</ins></b></a></li>
+        </ul>
+        <div class="hambuger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="restaurant top" id="restaurant">
+     <div class="left">
+ <div class="img">
+          <img src="Images/29.jpg" alt="" class="image1">
+          <img src="Images/20.jpg" alt="" class="image2">
+		    <img src="Images/24.jpg" alt="" class="image3">
+		  
+        </div>
+      </div>
+      <div class="right">
+        <div class="text">
+          <h2><b>Our Restaurant</b></h2>
+          <p><b>In our restaurant, we serve a wide range of traditional Sri Lankan food, such as delicious vegetable curries, special oven-baked bread, brown rice and fresh fruits. 
+            The owner of Oracal restaurant lived in Italy for many years, where he discovered his love of Italian cuisine. That`s why we also serve a small and exquisite range of Italian dishes at our restaurants. 
+            With our professional oven, we make authentic and delicious Italian pizzas for our guests.</b></p>
+        </div>
+        <div class="accordionWrapper">
+          <div class="accordionItem open">
+            <h2 class="accordionIHeading"><b>Italian Kitchen</b></h2>
+            <div class="accordionItemContent">
+              <p><i>Italian cuisine has a great variety of different ingredients which are commonly used, ranging from fruits, vegetables, grains, cheeses, meats and fish. In the North of Italy, fish (such as cod, or baccalà), potatoes, rice, corn (maize), sausages, pork, and different types of cheese are the most common ingredients.</i></p>        
+			  </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading"><b>Indian Kitchen</b></h2>
+            <div class="accordionItemContent">
+              <p><i>Spicy, rich, flavourful and diverse are terms that are frequently used to describe Indian food. All these words are apt in describing Indian cuisine, for it is diverse in variety and taste, and is made up from a wide array of regional cuisines throughout various parts of India.
+              </i></p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading"><b>Sri Lankan Kitchen</b></h2>
+            <div class="accordionItemContent">
+              <p><i>Sri Lankan cuisine is known for its particular combinations of herbs, spices, fish, vegetables, rices, and fruits. The cuisine is highly centered around many varieties of rice, as well as coconut which is an ubiquitous plant throughout the country
+             </i> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    var accItem = document.getElementsByClassName('accordionItem');
+    var accHD = document.getElementsByClassName('accordionIHeading');
+
+    for (i = 0; i < accHD.length; i++) {
+      accHD[i].addEventListener('click', toggleItem, false);
+    }
+
+    function toggleItem() {
+      var itemClass = this.parentNode.className;
+      for (var i = 0; i < accItem.length; i++) {
+        accItem[i].className = 'accordionItem close';
+      }
+      if (itemClass == 'accordionItem close') {
+        this.parentNode.className = 'accordionItem open';
+      }
+    }
+  </script>
+  
+  <section class="gallery top" id="gallery">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5><b>WELCOME TO OUR PHOTO GALLERY</b></h5>
+          <h2><b>food Gallery in Our Hotel</b></h2>
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="Images/14.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="Images/12.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="Images/13.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="Images/15.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="Images/16.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="Images/17.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="Images/18.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="Images/19.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="Images/20.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="Images/21.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="Images/22.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="Images/23.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="Images/24.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="Images/25.jpg" alt="">
+        </div>
+		<div class="item">
+          <img src="Images/29.jpg" alt="">
+        </div>
+		<div class="item">
+          <img src="Images/30.jpg" alt="">
+        </div>
+		<div class="item">
+          <img src="Images/31.jpg" alt="">
+        </div>
+		
+      </div>
+
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+  </html>
